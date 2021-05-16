@@ -1,0 +1,115 @@
+Run started on:
+	Date: 2021/5/15
+	Time: 21:45:46
+	PyGBe version: 0.3.2+28.ga5da1eb.dirty
+Config file: /home/sergiourzua/Amylase_and_Trypsin/convergencia_trypsin_ph8/sensor_isolated/sensor_100x100x10.config
+Parameter file: /home/sergiourzua/Amylase_and_Trypsin/convergencia_trypsin_ph8/sensor_isolated/sensor_100x100x10.param
+Geometry folder: /home/sergiourzua/Amylase_and_Trypsin/convergencia_trypsin_ph8/sensor_isolated/geometry
+Running in: /home/sergiourzua/Amylase_and_Trypsin/convergencia_trypsin_ph8/sensor_isolated
+
+Reading surface 0 from file geometry/sensor_100x100x10_d01
+Time load mesh: 0.24367141723632812
+Removed areas=0: 0
+
+Total elements : 24140
+Total equations: 24140
+Electric field: 1e-12 e/(Ang^2 eps_0)
+----------------------------
+
+1 surfaces:
+
+Surface 0:
+	24140 elements
+	Surface type         : neumann_surface
+	Cells                : 105
+	Twigs                : 72
+	Levels               : 4
+	C0 size              : 70.52472552673206
+	C0 box center        : -3.61688033845075e-15, -3.5226907463035953e-15, -5.0
+	Twig cell size       : 8.815590690841507
+	Rbox/theta           : 17.631181381683014
+	Analytic distance    : 2.8202036581809993
+	Elem. per Ang^2      : 1.0058333333333334
+	Max, min, avg elem.  : 1.0060362173038282, 0.991866693116435, 0.9942004971002486
+	Total area           : 24000.0
+------------------------------
+
+2 regions:
+
+Region 0:
+	Laplace or Yukawa: 2
+	kappa            : 0.125
+	dielectric const : 80.0
+	Number of charges: 0
+	Parent surface   : []
+	Child surfaces   : [0]
+Region 1:
+	Laplace or Yukawa: 0
+	kappa            : 0.0
+	dielectric const : 0.0
+	Number of charges: 0
+	Parent surface   : [0]
+	Child surfaces   : []
+------------------------------
+
+Parameters:
+	Data type               : <class 'numpy.float64'>
+	Use GPU                 : 1
+	P                       : 6
+	threshold               : 0.50
+	theta                   : 0.50
+	NCRIT                   : 500
+	CUDA block size         : 128
+	Gauss points per element: 4
+	Gauss points near singlr: 19
+	1D Gauss points per side: 9
+	GMRES tolerance         : 1e-05
+	GMRES max iterations    : 1000
+	GMRES restart iteration : 200
+----------------------------
+
+Generate interaction list
+Transfer data to GPU
+Generate RHS
+List time          : 0.025673389434814453s
+Data transfer time : 0.024691343307495117s
+RHS generation time: 0.47847533226013184s
+------------------------------
+Total setup time   : 2.9391026496887207s
+Solve
+Iteration: 1, relative residual: 0.08759183874058792
+Iteration: 2, relative residual: 0.006764837642305701
+Iteration: 3, relative residual: 0.0018633470932752248
+Iteration: 4, relative residual: 0.0004009778307070758
+Iteration: 5, relative residual: 7.21664024236027e-05
+Iteration: 6, relative residual: 1.0838054193093992e-05
+GMRES solve
+Converged after 7 iterations to a residual of 2.3348264046723694e-06
+Time weight vector: 0.5045378265380859
+Time sort         : 0.023171839788556102
+Time data transfer: 0.07530694459378721
+Time P2M          : 0.9677466506958007
+Time M2M          : 0.01178774392604828
+Time M2P          : 0.33594806861877446
+Time P2P          : 3.2047217712402345
+	Time analy: 0.0
+Solve time        : 4.699300289154053s
+
+Calculate Solvation Energy (E_solv)
+Time E_solv: 0.01668572425842285s
+
+Calculate Surface Energy (E_surf)
+Calculating surface energy around region 1, stored in E_surf[0]
+Region 1: E_surf = 45.36544814159309 kcal/mol = 189.8090350244255 kJ/mol
+Time E_surf: 0.016244888305664062s
+
+Calculate Coulomb Energy (E_coul)
+Time E_coul: 1.430511474609375e-06s
+
+------------------------------
+Totals:
+E_solv = 0 kcal/mol
+E_surf = 45.36544814159309 kcal/mol
+E_coul = 0 kcal/mol
+
+Time = 7.791683912277222 s
