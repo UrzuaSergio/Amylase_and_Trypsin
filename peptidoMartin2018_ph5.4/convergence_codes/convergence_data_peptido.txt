@@ -1,0 +1,9 @@
+#densidad EField	Esolv_ais	Esurf_ais 	Esolv_int	Esurf_int
+2	 1e-12		
+4	 1e-12	        
+8	 1e-12		
+16       1e-12          
+2	 0.01
+4 	 0.01
+8        0.01
+16       0.01
